@@ -1,0 +1,14 @@
+/* We have <img> tags that have been given (two) class names and both of the two <img> tags share at least one of the class names, which 
+in this case is: "avatar" and then a space (" ") with another clas name within the same tag, one being "proportioned" and one being "disotorted". 
+
+We are going to chain selectors together using the chain selector syntax so that we can affect style the "avatar" AND "proportioned/distorted" classes. */
+
+.avatar.proportioned { /* the classes have been chained in the CSS to inform the browser that the styling affects this AND that, in this case, class "avatar" AND "proportioned"*/
+    width: 300px; /* Any content identified with both classes will have these styles */
+    height: 100%;
+}
+
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
+}

@@ -1,0 +1,33 @@
+/* We want to use descendant selectors in this exercise; a descendant selector can be thought of as a 'child' to a 'parent' 
+so in this index.html file, the "text" class is a 'child' or a 'descendant' of the "container" class. and so the <p> tags that 
+have the class name of "text" will be affected. Interestingly, you can also use a type selector in this example to specifically 
+target the <p> tags that are 'children' or 'descendants' of the "container" class. 
+*/
+
+/*
+Using the class names to address the descendants: 
+*/
+
+/*
+.container .text {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;    
+    text-align: center;
+}
+*/
+
+
+
+
+
+/*
+Using the class name as the 'parent' and using the type tags <p> to address the 'child': 
+*/
+
+.container p {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;    
+    text-align: center;   
+}

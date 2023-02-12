@@ -1,0 +1,16 @@
+/* The styling that is shared by the first element AND the second element */
+
+.oneStyle, .anotherStyle { /* Grouping selectors; group the two classes together so that the styling rule applies to both elements with this class */
+    font-size: 28px; /* Change the font-size of any content in the elements in the class tha has been targeted */ 
+    font-family: "Helvetica", "Times New Roman", sans-serif; /* Use of font-families with for the first two indexes and a generic fallback */
+}
+
+.oneStyle { /* Only targets the first class element */
+    background-color: orange;
+    color: red;;
+}
+
+.anotherStyle { /* Only targets the second class element */
+    color: rgb(0, 174, 255);
+    background-color: rgb(252, 117, 139);
+}

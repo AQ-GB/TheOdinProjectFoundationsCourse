@@ -1,0 +1,60 @@
+body{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+
+.para {
+  font-size: 22px;
+}
+
+/* The declaration .small-para was moved after the declaration .para rather
+than before, so that the larger paragraph is styled first, and then the 
+smaller paragraph is styled */
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* The name of the selector for this declaration block is incorrect so 
+the specifity is off... */
+
+#confirm-button { /* name changed for the selector to the id use since the id
+  scores higher for specifity */
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+/* div.text selector has been moved since we want to target the elements that 
+have the class names of "text" that are children of any <div> tags */
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+
+/* lack of specific selector as it is targeting only the child class, but 
+what we want to style has an additional class name of (.text) so we need to 
+specify this as well; direct descendance */ 
+.text .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+
