@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    
+    <!--This is known as 'internal CSS-styling since the styling CSS declarations are being written within the HTML document-->
+
+
+    <style>
+      p { /*Specifying all of the consequent styling to ANY <p> tags, however in this context, there is only one <p> tag...*/ 
+        background-color: green;
+        color: white;
+        font-size: 18px;
+      }
+      /*The internal styling method requires the tags 
+      <style>
+      and a closing tag of
+      </style>
+      */
+      </style>
+
+    <title>Methods for Adding CSS</title> <!--In the range of the external style sheets, internal style sheets and the in-line style sheets-->
+  </head>
+  <body>
+    <div>Style me via the external method!</div> </body><!--Styled the tag using the external method of CSS Styling-->
+    <p>I would like to be styled with the internal method, please.</p> <!--Styled the tag using the internal method of CSS Styling-->
+    <button style="background-color: orange; font-size: 18px;">Inline Method</button> <!--<Button> tag is styled using the inine method-->
+  </body>
+</html>
