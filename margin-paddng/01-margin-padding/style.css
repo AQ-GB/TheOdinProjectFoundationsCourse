@@ -1,0 +1,37 @@
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.one {
+  background: pink;
+  border: 3px solid blue;
+  /* CHANGE ME */
+  padding: 30px; /*Changed the padding - the space between the content and the border*/
+  margin: 10px; /*Changed the space betweeen one element and the next element */
+}
+
+.two {
+  background: lightblue;
+  border: 3px solid purple;
+  /* CHANGE ME */
+  margin-bottom:70px;
+  /* you can specify the margin you want to expand directly, by specifying the edge, 
+  or you can use thee long hand version of just calling 'margin' and specifying the 
+  edge of what you want to target. The order is <top>, <right>, <bottom>, <left>
+  margin: 0px 0px 70px 0px; */
+}
+
+.three {
+  background: peachpuff;
+  border: 3px solid brown;
+  width: 200px;
+  /* CHANGE ME */
+  /*Changes the padding of the <div ="three"> tag so that its box has 
+  a distance of 30 pixels between the content and the border */ 
+  padding: 30px; 
+  /*Pushes the selector it is targetting, to the right of the page by 335 pixels
+  "margin-left" may seem that it will push the element to the left of the page, but 
+  it builds space to the left of the element to push the element to the right */
+  margin-left: 335px;
+}

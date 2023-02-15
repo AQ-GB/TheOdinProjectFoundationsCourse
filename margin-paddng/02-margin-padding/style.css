@@ -1,0 +1,55 @@
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+
+/* card is a diviser <div> tag, and the other classes are all 
+nested within the <card> class.  */
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+/* the first card clas is a box element, and the bg has been set, the 
+margin has been set to 5px so that the <card> box is 5px away from other 
+elements, such as the <content> class and the <card> class.  */
+
+.title {
+  background: #e3f4ff;
+  margin: 5px;
+  /* the String in the <card> block, is padded further from the border; 5px up
+  and down; 10px left and right */
+  padding: 5px 10px; 
+  font-size: 18px;
+}
+
+.content {
+  background: #e3f4ff;
+  /* <parameter one> is top/bottom, <parameter two> is left/right */
+  padding: 15px 9px; 
+  margin: 5px;
+}
+
+.button-container {
+  background: #e3f4ff;
+  margin: 5px;
+  padding: 10px;
+  text-align: center; /*Assigs the text "and a" into the center of the class*/
+}
+
+
+/* <button> is an in-line element; it is displayed on the same line as the 
+class="button-container" so display; block makes the <button> appears on a new line
+and then I can push the left margin away from the <card> border, by 120px */
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  padding: 7px 20px;
+  display: block;
+  margin-left: 120px;
+}
