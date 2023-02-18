@@ -1,0 +1,33 @@
+.container {
+  background: dodgerblue;
+  border: 4px solid midnightblue;
+  width: 400px;
+  height: 300px;
+   display: flex; /* the children becomes a flexible container  */
+  justify-content: center; /* in the center of the main-axis */
+  align-items: center; /* in the center of the cross-axis */
+}
+
+.box {
+  background: palevioletred;
+  font-weight: bold;
+  text-align: center;
+  border: 6px solid maroon;
+  width: 80px;
+  height: 80px;
+
+/* 
+  An interersting point; I naively assigned the flex context to the item and 
+  subsequently trying to align any elements within the container, but there is NO 
+  item(s) within the .box container, and so nothing was moving. I changed the Flex 
+  property to the container, so that the elements within that container can actually
+  be aligned  
+  
+  */
+  
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+ */
+
+}

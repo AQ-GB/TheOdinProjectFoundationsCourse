@@ -1,0 +1,51 @@
+.header  {
+  font-family: monospace;
+  background: papayawhip;
+
+  /* makes the elements within the header class, as a flexbox alignment/flexbox context */
+
+  display: flex;
+  /* the items within the header sets the space between the items in the header 
+  class as equal between the elements but begins at the edge */ 
+  justify-content:space-between;
+  /* the items within the header, specifically the links have been aligned into the 
+  center of the header */
+  align-items: center;
+  /* the header has padding added to the yellow border so that the logo can fit 
+  in nicer */
+  padding: 10px;
+}
+
+
+
+.logo {
+  font-size: 48px;
+  font-weight: 900;
+  color: tomato;
+  background: white;
+  padding: 4px 32px;
+}
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  margin: 10px;
+  padding: 20px;
+  /* the ul has items within it, that we want to align so we make the <ul> a flexbox */
+  display: flex;
+  /* <ul> has a default padding/margin so we need to eliminate it */
+  margin: 0px;
+  padding: 0px;
+  /* adds a gap between the elements </li> in the <ul> of 12px */
+  gap: 12px;
+  font-weight: bold;
+}
+
+a {
+  font-size: 22px;
+  background: white;
+  padding: 8px;
+  /* this removes the line under the links */
+  text-decoration: none;
+  color: purple;
+}
